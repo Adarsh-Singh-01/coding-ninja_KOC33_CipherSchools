@@ -22,12 +22,12 @@ def display_Contacts():
 
 while True:
     choice = int(input("Enter your Choice \n 1. Search Contacts \n 2. Display all Contacts with names \n 3. Search Multiple Contacts one by one \n 4. Exit\n"))
-    if True and choice == 1:
+    if choice == 1:
         name = input("Enter the student's name_ \n  ")
         if name in Contacts:
             print(" \n ",name,"'s contact number is",Contacts[name]," \n ")
         else:
-            print("Name is not found in contact book \n ")
+            print("Name was not found in contact book \n ")
     elif choice == 2:
         display_Contacts()
     elif choice == 3:
